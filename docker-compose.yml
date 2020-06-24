@@ -2,7 +2,7 @@ version: '3'
 
 services:
   bamsangprediction:
-    build: ./Dockerfile
+    build:
     ports:
       - "8000:8000"
     network_mode: bridge
