@@ -3,7 +3,7 @@ MAINTAINER keldendraduldorji@gmail.com
 
 RUN apt-get update -y
 RUN apt-get install python3-pip -y
-RUN apt-get install gunicorn3 -y
+RUN apt-get install gunicorn -y
 
 COPY requirements.txt requirements.txt
 COPY predictioncontainer /opt/
