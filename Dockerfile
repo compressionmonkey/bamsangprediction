@@ -6,7 +6,7 @@ RUN apt-get install python3-pip -y
 RUN apt-get install gunicorn -y
 
 COPY requirements.txt requirements.txt
-COPY ../predictioncontainer /opt/
+COPY predictioncontainer /opt/
 
 RUN pip3 install -r requirements.txt
 WORKDIR /opt/
