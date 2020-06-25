@@ -3,6 +3,7 @@ version: '3'
 services:
   bamsangprediction:
     build: ./
+    command: gunicorn app.py
     ports:
       - "8000:8000"
     network_mode: bridge
